@@ -93,6 +93,7 @@ The  `Copernicus Marine Toolbox` sends a get_feature request through a Python AP
 
 Customize your query and find a link where to get information about available datasets in the reference section.
 
+
 ```python
 input_dict = {
     "dataset_id": "SST_MED_SST_L3S_NRT_OBSERVATIONS_010_012_b", 
@@ -105,7 +106,9 @@ input_dict = {
     "end_datetime": "2024-02-28T00:00:00", }
 ```
 
+
 After modifying `input_dict`, adjust `units` and `variable_abreviation` to your queried dataset. Since *sea surface temperature* is queried by default, `unit` is assigned "°C" and the abreviation "sst". Those input parameters will appear on the output plots. 
+
 
 ```python
 unit = "°C"
