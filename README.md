@@ -30,18 +30,31 @@
 mamba create --name copernicusmarine conda-forge::copernicusmarine --yes
 ```
 
-
-
-#### **1. Activate copernicusmarine environment**
+#### **2. Activate copernicusmarine environment**
 ```bash
 conda activate copernicusmarine
 ```
-#### **2. Install necessary libraries from requirements.yml**
-```bash
-conda env update --name copernicusmarine --file requirements.yml # find requirments.yml in this repository
-```
+
 #### **3. Verify installation**
 ```bash
-conda activate copernicusmarine
 conda list  # Lists installed packages
+```
+
+#### **4. Install a ipykernel**
+```bash
+# Inside the copernicusmarine environment, install the ipykernel package
+conda install -c conda-forge ipykernel -y
+```
+
+#### **5. Register This Environment as a Jupyter Kernel**
+```bash
+# This registers the copernicusmarine environment inside Jupyter
+python -m ipykernel install --user --name copernicusmarine --display-name "CMT_Kernel"
+```
+
+### Step 2: Install necessary libraries 
+
+#### **3. Install necessary libraries from requirements.yml**
+```bash
+conda env update --name copernicusmarine --file requirements.yml # find requirments.yml in this repository
 ```
