@@ -81,6 +81,15 @@ jupyter lab # this will automatically open a new browser window and host the Jup
 
 ## Usage
 
+```python
+import xarray as xr
+
+# Load dataset
+ds = xr.open_dataset("data.nc")
+
+print(ds)
+
+
 ## Output
 
 ## Relevant References
