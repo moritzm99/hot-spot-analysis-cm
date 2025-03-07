@@ -54,7 +54,6 @@ python -m ipykernel install --user --name copernicusmarine --display-name "CMT_K
 
 ### Step 2: Install necessary libraries 
 
-#### **3. Install necessary libraries from requirements.yml**
 ```bash
 conda env update --name copernicusmarine --file requirements.yml # find requirments.yml in this repository
 ```
