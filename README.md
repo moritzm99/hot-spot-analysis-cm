@@ -94,6 +94,12 @@ input_dict = {
 }
 ```
 
+```python
+unit = "°C"
+
+variable_abreviation = "sst"
+```
+
 ## Output
 
 ## Relevant References
@@ -101,6 +107,7 @@ input_dict = {
 ### Copernicus Marine Ocean Products
 
 - access the Copernicus Marine Data Storage and find data compatible with this script [here](https://data.marine.copernicus.eu/products)
+- explore quality of Copernicus Marine Data [here](https://pqd.mercator-ocean.fr/?pk_vid=161106812679b150)
 
 ### Complementary 
 
