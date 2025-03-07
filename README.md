@@ -46,7 +46,7 @@ conda list  # Lists installed packages
 conda install -c conda-forge ipykernel -y
 ```
 
-#### **5. Register This Environment as a Jupyter Kernel**
+#### **5. Register this environment as a Jupyter Kernel**
 ```bash
 # This registers the copernicusmarine environment inside Jupyter
 python -m ipykernel install --user --name copernicusmarine --display-name "CMT_Kernel"
