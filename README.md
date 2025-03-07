@@ -1,5 +1,8 @@
 # Multi year data visualization with Copernicus Marine Toolbox
 
+- this repository was mainly created for Archipelagos interns to maintain data harvesting from `Copernicus Ocean Products` for marine research purposes
+- this is a 'from scratch guide' starting from anaconda installation and copernicus API setup to more sophisticated data querying via `lazy-loading` and visualiazation
+
 ## Requirements
 ### Step 0:
 - a working package/file/environment manager like anaconda/miniconda or micromamba with a Python > 3 installation:
@@ -57,3 +60,7 @@ python -m ipykernel install --user --name copernicusmarine --display-name "CMT_K
 conda env update --name copernicusmarine --file requirements.yml # find requirments.yml in this repository
 ```
 ## Usage
+
+## Output
+
+## Relevat References
