@@ -105,7 +105,7 @@ input_dict = {
     "end_datetime": "2024-02-28T00:00:00", }
 ```
 
-After modifying 'input_dict', adjust `units` and `variable_abreviation` to your queried dataset. Since *sea surface temperature* is queried by default, `unit` is assigned degree Celsius and the abreviation sst. Those input parameters will appear on the output plots. 
+After modifying `input_dict`, adjust `units` and `variable_abreviation` to your queried dataset. Since *sea surface temperature* is queried by default, `unit` is assigned "°C" and the abreviation "sst". Those input parameters will appear on the output plots. 
 
 ```python
 unit = "°C"
