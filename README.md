@@ -96,3 +96,4 @@ print(ds)
 
 - read about xarray [here](https://docs.xarray.dev/en/stable/getting-started-guide/installing.html)
 - watch a video about Hot-Spot Anylsis [here](https://www.youtube.com/watch?v=sjLyJW95fHM)
+- learn about geospatial Python [here](https://geog-312.gishub.org)
