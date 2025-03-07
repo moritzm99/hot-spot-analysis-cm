@@ -1,8 +1,5 @@
-# Web-mapping-Project
+# activate copernicusmarine environment
 ```bash
-python3.9 -m venv venv
-source venv/bin/activate
-
-# Install packages first time
-pip install -r requirements.txt
+conda activate copernicus
 ```
+
