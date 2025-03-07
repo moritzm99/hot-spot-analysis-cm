@@ -61,6 +61,21 @@ python -m ipykernel install --user --name copernicusmarine --display-name "CMT_K
 ```bash
 conda env update --name copernicusmarine --file requirements.yml # find requirments.yml in this repository
 ```
+
+### Step 3: Start the installation
+
+#### **1. Activate juypter environment**
+```bash
+conda activate jupyter # navigate to your terminal/shell 
+```
+
+#### **2. Start Juypter lab**
+```bash
+juypter lab # this will automatically open a new browser window and host the Jupter IDE
+```
+
+
+
 ## Usage
 
 ## Output
