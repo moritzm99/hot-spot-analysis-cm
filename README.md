@@ -82,17 +82,27 @@ jupyter lab # this will automatically open a new browser window and host the Jup
 ## Usage
 
 ```python
-import xarray as xr
-
-# Load dataset
-ds = xr.open_dataset("data.nc")
-
-print(ds)
+input_dict = {
+    "dataset_id": "SST_MED_SST_L3S_NRT_OBSERVATIONS_010_012_b", 
+    "variables": ["adjusted_sea_surface_temperature"], 
+    "minimum_longitude": 19.22659983450641, 
+    "maximum_longitude": 28.439441984120553, 
+    "minimum_latitude": 34.62160284496615, 
+    "maximum_latitude": 40.9634662781889, 
+    "start_datetime": "2023-12-01T00:00:00", 
+    "end_datetime": "2024-02-28T00:00:00", 
+}
 ```
 
 ## Output
 
 ## Relevant References
+
+### Copernicus Marine Ocean Products
+
+- access the Copernicus Marine Data Storage and find data compatible with this script [here](https://data.marine.copernicus.eu/products)
+
+### Complementary 
 
 - read about xarray [here](https://docs.xarray.dev/en/stable/getting-started-guide/installing.html)
 - watch a video about Hot-Spot Anylsis [here](https://www.youtube.com/watch?v=sjLyJW95fHM)
