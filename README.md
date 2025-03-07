@@ -1,4 +1,4 @@
-# Hot-Spot Analysis and data visualization with Copernicus Marine Toolbox
+# Hot-Spot Analysis and data visualization with `Copernicus Marine Toolbox`
 
 - this repository was mainly created for `Archipelagos` interns to maintain data harvesting from `Copernicus Ocean Products` for marine research purposes
 - this is a 'from scratch guide' starting from anaconda installation and copernicus API setup to more sophisticated data querying and visualization
@@ -74,12 +74,16 @@ conda activate jupyter # navigate to your terminal/shell
 jupyter lab # this will automatically open a new browser window and host the Jupter IDE
 ```
 
-#### **3. Select the Copernicus Marine Toolbox Kernel in the right upper corner of your browser window inside the IDE:**
+#### **3. Select the `Copernicus Marine Toolbox` Kernel in the right upper corner of your browser window inside the IDE:**
 
 <img src="images/explain1.png" alt="Description" width="400"/>      <img src="images/explain2.png" alt="Description" width="400"/>
 
 
 ## Usage
+
+The  `Copernicus Marine Toolbox` sends a get_feature request through a Python API to the Copernicus Server. The query can be customized by passing a dictionary (`input_dict` compare code snippet). It consists of the following components:
+  - `dataset_id` defines the product to be queried, by default set to sea surface temperature
+  - `variables` defines a list of variables selected from the product (identifer = dataset_id), by default set to adjusted sea surface temperature
 
 ```python
 input_dict = {
@@ -90,8 +94,7 @@ input_dict = {
     "minimum_latitude": 34.62160284496615, 
     "maximum_latitude": 40.9634662781889, 
     "start_datetime": "2023-12-01T00:00:00", 
-    "end_datetime": "2024-02-28T00:00:00", 
-}
+    "end_datetime": "2024-02-28T00:00:00", }
 ```
 
 ```python
