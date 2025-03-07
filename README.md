@@ -81,11 +81,17 @@ jupyter lab # this will automatically open a new browser window and host the Jup
 
 ## Usage
 
+To use the code provided, clone this repository to your local machine and open `notebookname` in the previously created set-up.
+
+To run a Hot-Spot Analysis over different datasets, geographic extents or date ranges, find the `USER_INPUT` section at the beginning of `notebookname`
+
 The  `Copernicus Marine Toolbox` sends a get_feature request through a Python API to the Copernicus Server. The query can be customized by passing a dictionary (`input_dict` compare code snippet). It consists of the following components:
-  - `dataset_id` defines the product to be queried, by default set to Mediterranean Sea - High Resolution and Ultra High Resolution L3S Sea Surface Temperature
-  - `variables` defines a list of variables selected from the product (identifer = dataset_id), by default set to adjusted sea surface temperature
-  - `max and min lat/lat` define the bounding box of the query, by default set to the whole Agean sea
-  - `start/end_datetime` define the time period covered by the dataset, by default set to winter 2023/24 
+  - `dataset_id` defines the product to be queried, by default set to *Mediterranean Sea - High Resolution and Ultra High Resolution L3S Sea Surface Temperature*
+  - `variables` defines a list of variables selected from the product (identifer = dataset_id), by default set to *adjusted sea surface temperature*
+  - `max and min lat/lat` define the bounding box of the query, by default set to *whole Agean sea*
+  - `start/end_datetime` define the time period covered by the dataset, by default set to *winter 2023/24*
+
+Customize your query and find a link where to get information about available datasets in the reference section.
 
 ```python
 input_dict = {
@@ -98,6 +104,8 @@ input_dict = {
     "start_datetime": "2023-12-01T00:00:00", 
     "end_datetime": "2024-02-28T00:00:00", }
 ```
+
+After modifying 'input_dict', adjust `units` and `variable_abreviation` to your queried dataset. Since *sea surface temperature* is queried by default, `unit` is assigned degree Celsius and the abreviation sst. Those input parameters will appear on the output plots. 
 
 ```python
 unit = "°C"
