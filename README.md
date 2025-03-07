@@ -1,8 +1,11 @@
 # Multi year data visualization from Copernicus Marine toolbox
 
 ## Requirements
-- a working package/file/environmnet manager like anaconda/miniconda or micromamba
-- refer to the Archipelagos GIS Google Drive (contact Tim Grandjan for access request [here](t.grandjean@archipelago.gr)) or get instructions directly from the providers: [here](https://www.anaconda.com/download) for anaconda/miniconda, [here](https://mamba.readthedocs.io/en/latest/installation/micromamba-installation.html) for micromamba
+- a working package/file/environmnet manager like anaconda/miniconda or micromamba with a Python > 3 installation
+- refer to the Archipelagos GIS Google Drive (contact Tim Grandjan for access [here](mailto:t.grandjean@archipelago.gr)) or get instructions directly from the providers:
+- [here](https://www.anaconda.com/download) for anaconda/miniconda
+- [here](https://mamba.readthedocs.io/en/latest/installation/micromamba-installation.html) for micromamba
+
 - 
 #### **1. activate copernicusmarine environment**
 ```bash
