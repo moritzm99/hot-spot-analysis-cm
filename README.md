@@ -88,7 +88,7 @@ import xarray as xr
 ds = xr.open_dataset("data.nc")
 
 print(ds)
-
+```
 
 ## Output
 
