@@ -73,7 +73,10 @@ conda activate jupyter # navigate to your terminal/shell
 ```bash
 juypter lab # this will automatically open a new browser window and host the Jupter IDE
 ```
-<img src="images/explain1.png" alt="Description" width="400"/>
+
+Select the Copernicus Marine Toolbox Kernel in the right upper window of your browser window inside the IDE
+
+<img src="images/explain1.png" alt="Description" width="400"/> <img src="images/explain2.png" alt="Description" width="400"/>
 
 
 ## Usage
