@@ -1,7 +1,7 @@
 # Multi year data visualization with Copernicus Marine Toolbox
 
 - this repository was mainly created for Archipelagos interns to maintain data harvesting from `Copernicus Ocean Products` for marine research purposes
-- this is a 'from scratch guide' starting from anaconda installation and copernicus API setup to more sophisticated data querying via `lazy-loading` and visualiazation
+- this is a 'from scratch guide' starting from anaconda installation and copernicus API setup to more sophisticated data querying and visualiazation
 
 ## Requirements
 ### Step 0:
