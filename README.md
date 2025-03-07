@@ -26,7 +26,7 @@
     conda install -c conda-forge jupyterlab
     ```
 
-### Step 1: Establish connection to Copernicus Server through the Copernicus Marine Toolbox
+### Step 1: Establish connection to Copernicus Server
 
 A video tuturial can be found [here](https://vimeo.com/943705586) and in more detailed written form [here](https://help.marine.copernicus.eu/en/articles/7970514-copernicus-marine-toolbox-installation)
 
@@ -73,7 +73,7 @@ conda activate jupyter # navigate to your terminal/shell
 ```bash
 juypter lab # this will automatically open a new browser window and host the Jupter IDE
 ```
-
+<img src="images/example.png" alt="Description" width="400"/>
 
 
 ## Usage
