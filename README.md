@@ -82,8 +82,10 @@ jupyter lab # this will automatically open a new browser window and host the Jup
 ## Usage
 
 The  `Copernicus Marine Toolbox` sends a get_feature request through a Python API to the Copernicus Server. The query can be customized by passing a dictionary (`input_dict` compare code snippet). It consists of the following components:
-  - `dataset_id` defines the product to be queried, by default set to sea surface temperature
+  - `dataset_id` defines the product to be queried, by default set to Mediterranean Sea - High Resolution and Ultra High Resolution L3S Sea Surface Temperature
   - `variables` defines a list of variables selected from the product (identifer = dataset_id), by default set to adjusted sea surface temperature
+  - `max and min lat/lat` define the bounding box of the query, by default set to the whole Agean sea
+  - `start/end_datetime` define the time period covered by the dataset, by default set to winter 2023/24 
 
 ```python
 input_dict = {
