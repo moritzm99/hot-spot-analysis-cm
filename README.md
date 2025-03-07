@@ -8,9 +8,20 @@
     - [here](https://mamba.readthedocs.io/en/latest/installation/micromamba-installation.html) for micromamba
 
 - an Interactive Development Environment (IDE) or a Notebook-based Interactive Computing Environment:
-  - this repository was built using Jupyter lab (read more details [here])
+  - this repository was built using Jupyter lab (read more details [here](https://jupyter.org))
   - after sucessfull conda installation follow the next steps to get your instance
   - it is highly recommended to install Juypter lab in a seperate environment and link other environment Kernels to this one instance
+ 
+    ```bash
+    # Create and Activate a jupyter Environment
+    conda create -n jupyter python=3.9 jupyterlab ipykernel -y
+    conda activate jupyter
+    ```
+    
+    ```bash
+    # Install Juypter
+    conda install -c conda-forge jupyterlab
+    ```
 
 ### Step 1: Establish connection to Copernicus Server through the Copernicus Marine Toolbox
 
