@@ -1,7 +1,7 @@
 # Multi year data visualization with Copernicus Marine Toolbox
 
-- this repository was mainly created for Archipelagos interns to maintain data harvesting from `Copernicus Ocean Products` for marine research purposes
-- this is a 'from scratch guide' starting from anaconda installation and copernicus API setup to more sophisticated data querying and visualiazation
+- this repository was mainly created for `Archipelagos` interns to maintain data harvesting from `Copernicus Ocean Products` for marine research purposes
+- this is a 'from scratch guide' starting from anaconda installation and copernicus API setup to more sophisticated data querying and visualization
 
 ## Requirements
 ### Step 0:
@@ -27,6 +27,8 @@
     ```
 
 ### Step 1: Establish connection to Copernicus Server through the Copernicus Marine Toolbox
+
+A video tuturial can be found [here](https://vimeo.com/943705586) and in more detailed written form [here](https://help.marine.copernicus.eu/en/articles/7970514-copernicus-marine-toolbox-installation)
 
 #### **1. Install the Toolbox from the conda-forge channel**
 ```bash
@@ -63,4 +65,4 @@ conda env update --name copernicusmarine --file requirements.yml # find requirme
 
 ## Output
 
-## Relevat References
+## Relevant References
