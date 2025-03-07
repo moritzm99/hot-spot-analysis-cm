@@ -1,12 +1,12 @@
-### activate copernicusmarine environment
+#### activate copernicusmarine environment
 ```bash
-conda activate copernicus
+conda activate copernicusmarine
 ```
-### install necessary libraries from requirements.yml
+#### install necessary libraries from requirements.yml
 ```bash
-conda env update --name copernicusmarine --file requiremnts.yml
+conda env update --name copernicusmarine --file requirements.yml # find requirments.yml in this repository
 ```
-### verify installation
+#### verify installation
 ```bash
 conda activate copernicusmarine
 conda list  # Lists installed packages
