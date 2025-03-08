@@ -81,7 +81,7 @@ jupyter lab # this will automatically open a new browser window and host the Jup
 
 ## Usage
 
-### **1. Built a query**
+### Step 1: Built a query**
 
 To use the code provided, clone this repository to your local machine and open `notebookname` in the previously created set-up.
 
@@ -118,7 +118,8 @@ unit = "°C"
 variable_abreviation = "sst"
 ```
 
-### 2. Conduct temporal comparison
+### Step 2: Conduct temporal comparison
+
 
 ## Output
 
