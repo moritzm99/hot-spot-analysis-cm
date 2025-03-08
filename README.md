@@ -6,7 +6,7 @@
 ## Requirements
 ### Step 0:
 - a working package/file/environment manager like anaconda/miniconda or micromamba with a Python > 3 installation:
-  - refer to the Archipelagos GIS Google Drive (contact Tim Grandjan for access [here](mailto:t.grandjean@archipelago.gr)) or get instructions directly from the providers:
+  - refer to the Archipelagos GIS Google Drive (contact Tim Grandjean for access [here](mailto:t.grandjean@archipelago.gr)) or get instructions directly from the providers:
     - [here](https://www.anaconda.com/download) for anaconda/miniconda
     - [here](https://mamba.readthedocs.io/en/latest/installation/micromamba-installation.html) for micromamba
 
