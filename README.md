@@ -81,6 +81,8 @@ jupyter lab # this will automatically open a new browser window and host the Jup
 
 ## Usage
 
+### **1. Built a query**
+
 To use the code provided, clone this repository to your local machine and open `notebookname` in the previously created set-up.
 
 To run a Hot-Spot Analysis over different datasets, geographic extents or date ranges, find the `USER_INPUT` section at the beginning of `notebookname`
@@ -115,6 +117,8 @@ unit = "°C"
 
 variable_abreviation = "sst"
 ```
+
+### 2. Conduct temporal comparison
 
 ## Output
 
