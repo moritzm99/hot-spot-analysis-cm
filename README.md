@@ -137,7 +137,7 @@ Hence, conducting a temporal comparison (e.g. of the same extent) it is recommen
 
 ### Step 3: Conduct variable comparison
 
-**Note**: This experimental workflow was designed for sea surface temperature analysis. To adapt it for a different variable, modify the preprocessing function accordingly:
+**NOTE**: This experimental workflow was designed for sea surface temperature analysis. To adapt it for a different variable, modify the preprocessing function accordingly:
 
 ```python
 def pre_processing(dataset, variable_abreviation):
@@ -158,6 +158,22 @@ def pre_processing(dataset, variable_abreviation):
 ```
 
 ## Output
+
+`NOTEBOOKNAME` has the following outputs:
+  - **Plots:**
+      - Mean, Median and Standard Deviation
+      - 5 % highest values per grid cell (collapsed over the time dimension)
+      - GETIS-ORD G* Hot-Cold Spot over the Median of the 5 % highest values AND the entire dataset
+  - **Data:**
+      - Mean, Median, Standard Deviation and 5 % highest values as GeoTiff
+      - GETIS-ORD G* Statistics as GPKG
+
+File naming convention:
+```Python
+[statistical metric, e.g. median]_{variable_abreviation}_{start_date}-{end_date}.[extension, e.g. .gpkg]
+```
+
+**NOTE:** Since plot and data output names are generated based on the provided input data, running the notebook multiple times with different metadata selections **does not** overwrite existing files.
 
 ## Relevant References
 
