@@ -84,9 +84,9 @@ jupyter lab # this will automatically open a new browser window and host the Jup
 
 ### Step 1: Built a query
 
-To use the code provided, clone this repository to your local machine and open `notebookname` in the previously created set-up.
+To use the code provided, clone this repository to your local machine and open `hot_cold_spot_analysis.ipynb` in the previously created set-up.
 
-To run a Hot-Spot Analysis over different datasets, geographic extents or date ranges, find the `USER_INPUT` section at the beginning of `notebookname`
+To run a Hot-Spot Analysis over different datasets, geographic extents or date ranges, find the `USER_INPUT` section at the beginning of `hot_cold_spot_analysis.ipynb`
 
 The  `Copernicus Marine Toolbox` sends a get_feature request through a Python API to the Copernicus Server. The query can be customized by passing a dictionary (`input_dict` compare code snippet). It consists of the following components:
   - `dataset_id` defines the product to be queried, by default set to *Mediterranean Sea - High Resolution and Ultra High Resolution L3S Sea Surface Temperature*
@@ -159,7 +159,7 @@ def pre_processing(dataset, variable_abreviation):
 
 ## Output
 
-`NOTEBOOKNAME` has the following outputs:
+`hot_cold_spot_analysis.ipynb` has the following outputs:
   - **Plots:**
       - Mean, Median and Standard Deviation
       - 5 % highest values per grid cell (collapsed over the time dimension)
@@ -175,9 +175,9 @@ File naming convention:
 
 **NOTE:** Since plot and data output names are generated based on the provided input data, running the notebook multiple times with different metadata selections **does not** overwrite existing files.
 
-Find a style file for GETIS-ORD G* GPKG plotting for example in QGIS in this repository.
+Find the style file 'hot_cold_spot_style_qgis.qml' for GETIS-ORD G* GPKG plotting (e.g in QGIS) in this repository.
 
-Find a temporal comparison between winter 23/24 and summer 24 of *sea surface temperature* over the whole *Agean Sea* produced with `NOTEBOOKNAME` in the `output` folder of this repository. 
+Find a temporal comparison between winter 23/24 and summer 24 of *sea surface temperature* over the whole *Agean Sea* produced with `hot_cold_spot_analysis.ipynb` in the `output` folder of this repository. 
 
 ## Relevant References
 
