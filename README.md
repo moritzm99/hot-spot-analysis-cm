@@ -170,10 +170,12 @@ def pre_processing(dataset, variable_abreviation):
 
 File naming convention:
 ```Python
-[statistical metric, eg. median]_{variable_abreviation}_{start_date}-{end_date}.[extension, eg. .gpkg]
+[statistical metric, eg. median]_{variable_abreviation}_{start_date}-{end_date}.[file-extension, eg. .gpkg]
 ```
 
 **NOTE:** Since plot and data output names are generated based on the provided input data, running the notebook multiple times with different metadata selections **does not** overwrite existing files.
+
+Find a style file for GETIS-ORD G* GPKG plotting for example in QGIS in this repository.
 
 ## Relevant References
 
