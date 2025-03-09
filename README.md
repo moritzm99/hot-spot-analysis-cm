@@ -13,7 +13,7 @@
 
 - an Interactive Development Environment (IDE) or a Notebook-based Interactive Computing Environment:
   - this repository was built using Jupyter lab (read more details [here](https://jupyter.org))
-  - after sucessfull conda installation follow the next steps to get your instance
+  - after sucessful conda installation follow the next steps to get your instance
   - it is highly recommended to install Juypter lab in a seperate environment and link other environment Kernels to this one instance
  
     ```bash
@@ -29,7 +29,7 @@
 
 ### Step 1: Establish connection to Copernicus Server
 
-A video tuturial can be found [here](https://vimeo.com/943705586) and in more detailed written form [here](https://help.marine.copernicus.eu/en/articles/7970514-copernicus-marine-toolbox-installation)
+A video tutorial can be found [here](https://vimeo.com/943705586) and in more detailed written form [here](https://help.marine.copernicus.eu/en/articles/7970514-copernicus-marine-toolbox-installation)
 
 #### **1. Install the Toolbox from the conda-forge channel**
 ```bash
@@ -86,12 +86,12 @@ jupyter lab # this will automatically open a new browser window and host the Jup
 
 To use the code provided, clone this repository to your local machine and open `hot_cold_spot_analysis.ipynb` in the previously created set-up.
 
-To run a Hot-Spot Analysis over different datasets, geographic extents or date ranges, find the `USER_INPUT` section at the beginning of `hot_cold_spot_analysis.ipynb`
+To run a Hot-Cold-Spot Analysis over different datasets, geographic extents or date ranges, find the `USER_INPUT` section at the beginning of `hot_cold_spot_analysis.ipynb`
 
 The  `Copernicus Marine Toolbox` sends a get_feature request through a Python API to the Copernicus Server. The query can be customized by passing a dictionary (`input_dict` compare code snippet). It consists of the following components:
   - `dataset_id` defines the product to be queried, by default set to *Mediterranean Sea - High Resolution and Ultra High Resolution L3S Sea Surface Temperature*
   - `variables` defines a list of variables selected from the product (identifer = dataset_id), by default set to *adjusted sea surface temperature*
-  - `max and min lat/lat` define the bounding box of the query, by default set to *whole Agean sea*
+  - `max and min lon/lat` define the bounding box of the query, by default set to *whole Agean sea*
   - `start/end_datetime` define the time period covered by the dataset, by default set to *winter 2023/24*
 
 Customize your query and find a link where to get information about available datasets in the reference section.
@@ -114,7 +114,7 @@ After modifying `input_dict`, adjust `units`, `variable_abreviation`, `DOI`, `sp
 
 Since *sea surface temperature* is queried by default, `unit` is assigned "°C" and the abreviation equals "sst". Those input parameters will appear on the output plots. 
 
-Make sure to extract copyright information (`DOI`) and properties (`spatial` and `temporal resolution`) matching your dataset (compare reference section). Find metadata on the products website (for this example case compare [here](https://data.marine.copernicus.eu/product/SST_MED_SST_L3S_NRT_OBSERVATIONS_010_012/description))
+Make sure to extract copyright information (`DOI`) and properties (`spatial` and `temporal resolution`) to match your dataset (compare reference section). Find metadata on the products website (for this example case compare [here](https://data.marine.copernicus.eu/product/SST_MED_SST_L3S_NRT_OBSERVATIONS_010_012/description))
 
 
 ```python
