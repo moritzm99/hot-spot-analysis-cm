@@ -2,6 +2,7 @@
 
 - this repository was mainly created for `Archipelagos` interns to maintain data harvesting from `Copernicus Ocean Products` for marine research purposes
 - this is a 'from scratch guide' starting from anaconda installation and copernicus API setup to more sophisticated data querying and visualization
+- expected runtime on a 32 GB RAM machine: ~6 min
 
 ## Requirements
 ### Step 0:
@@ -109,17 +110,46 @@ input_dict = {
 ```
 
 
-After modifying `input_dict`, adjust `units` and `variable_abreviation` to your queried dataset. Since *sea surface temperature* is queried by default, `unit` is assigned "°C" and the abreviation "sst". Those input parameters will appear on the output plots. 
+After modifying `input_dict`, adjust `units`, `variable_abreviation`, `DOI`, `spatial_resolution` and `temporal_resolution` to your queried dataset. Since *sea surface temperature* is queried by default, `unit` is assigned "°C" and the abreviation equals "sst". Those input parameters will appear on the output plots. Make sure to extract copyright information (`DOI`) and datset properties (`spatial` and `temporal resolution`) matching your dataset (compare reference section). Find metadata on the products website (for this example case compare [here](https://data.marine.copernicus.eu/product/SST_MED_SST_L3S_NRT_OBSERVATIONS_010_012/description))
 
 
 ```python
 unit = "°C"
 
 variable_abreviation = "sst"
+
+DOI = "https://doi.org/10.48670/moi-00171"
+
+spatial_resolution = "0.01° × 0.01°"
+
+temporal_resolution = "Daily"
 ```
 
 ### Step 2: Conduct temporal comparison
 
+Depending on the extent and variable selection of the query, fetched datasets can get heavy very quick. To avoid crashing, this workflow allows one date range selection per iteration. Hence, conducting a temporal comparison (e.g. of the same extent) it is recommended to run the NOTEBOOK twice (with different `input_dict` modifications of `start/end_datetime`)
+
+### Step 3: Conduct variable comparison
+
+**Note**: This experimental workflow was designed for sea surface temperature analysis. To adapt it for a different variable, modify the preprocessing function accordingly:
+
+```python
+def pre_processing(dataset, variable_abreviation):
+
+    # renaming data variable
+    dataset = dataset.rename({"adjusted_sea_surface_temperature": variable_abreviation})
+
+    # converting Kelvin to Celsius
+    dataset[variable_abreviation] = dataset[variable_abreviation]-273.15
+
+    # handle projections
+    dataset = dataset.rio.write_crs(CRS.from_epsg(4326))
+    dataset = dataset.rio.reproject(CRS.from_epsg(3857))
+
+    print("\nDataset pre-processing finished")
+
+    return dataset
+```
 
 ## Output
 
