@@ -133,7 +133,7 @@ temporal_resolution = "Daily"
 
 Depending on the extent and variable selection of the query, fetched datasets can get heavy very quick. To avoid crashing, this workflow allows one date range selection per iteration. 
 
-Hence, conducting a temporal comparison (e.g. of the same extent) it is recommended to run the NOTEBOOK twice (with different `input_dict` modifications of `start/end_datetime`)
+Hence, conducting a temporal comparison (e.g. of the same extent) it is recommended to run the `hot_cold_spot_analysis.ipynb` twice (with different `input_dict` modifications of `start/end_datetime`)
 
 ### Step 3: Conduct variable comparison
 
