@@ -33,7 +33,7 @@ A video tuturial can be found [here](https://vimeo.com/943705586) and in more de
 
 #### **1. Install the Toolbox from the conda-forge channel**
 ```bash
-mamba create --name copernicusmarine conda-forge::copernicusmarine --yes
+conda create --name copernicusmarine -c conda-forge copernicusmarine --yes
 ```
 
 #### **2. Activate copernicusmarine environment**
