@@ -177,6 +177,8 @@ File naming convention:
 
 Find a style file for GETIS-ORD G* GPKG plotting for example in QGIS in this repository.
 
+Find a temporal comparison between winter 23/24 and summer 24 of *sea surface temperature* over the whole *Agean Sea* produced with `NOTEBOOKNAME` in the `output` folder of this repository. 
+
 ## Relevant References
 
 ### Copernicus Marine Ocean Products
