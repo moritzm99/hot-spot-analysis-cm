@@ -170,7 +170,7 @@ def pre_processing(dataset, variable_abreviation):
 
 File naming convention:
 ```Python
-[statistical metric, e.g. median]_{variable_abreviation}_{start_date}-{end_date}.[extension, e.g. .gpkg]
+[statistical metric, eg. median]_{variable_abreviation}_{start_date}-{end_date}.[extension, eg. .gpkg]
 ```
 
 **NOTE:** Since plot and data output names are generated based on the provided input data, running the notebook multiple times with different metadata selections **does not** overwrite existing files.
