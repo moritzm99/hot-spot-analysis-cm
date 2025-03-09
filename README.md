@@ -82,7 +82,7 @@ jupyter lab # this will automatically open a new browser window and host the Jup
 
 ## Usage
 
-### Step 1: Built a query**
+### Step 1: Built a query
 
 To use the code provided, clone this repository to your local machine and open `notebookname` in the previously created set-up.
 
