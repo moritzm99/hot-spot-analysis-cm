@@ -114,7 +114,7 @@ After modifying `input_dict`, adjust `units`, `variable_abreviation`, `DOI`, `sp
 
 Since *sea surface temperature* is queried by default, `unit` is assigned "°C" and the abreviation equals "sst". Those input parameters will appear on the output plots. 
 
-Make sure to extract copyright information (`DOI`) and datset properties (`spatial` and `temporal resolution`) matching your dataset (compare reference section). Find metadata on the products website (for this example case compare [here](https://data.marine.copernicus.eu/product/SST_MED_SST_L3S_NRT_OBSERVATIONS_010_012/description))
+Make sure to extract copyright information (`DOI`) and properties (`spatial` and `temporal resolution`) matching your dataset (compare reference section). Find metadata on the products website (for this example case compare [here](https://data.marine.copernicus.eu/product/SST_MED_SST_L3S_NRT_OBSERVATIONS_010_012/description))
 
 
 ```python
